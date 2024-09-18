@@ -1,0 +1,6 @@
+# VIP College of Engineering Showcase
+
+We are planning on hosting a VIP showcase in the College of Engineering on Thursday, 10/31 between 1:00 and 3:00. The purpose of the event is to highlight the dynamic work being done through VIP teams across VCU. We will be inviting academic advisors to the showcase to help raise awareness of VIP as a course option for their students, as well as faculty and students who may be interested in launching or joining a VIP team. The showcase will likely begin with a brief overview of the VIP model followed by a poster gallery walk highlighting the work of each of our VIP teams. 
+ 
+We would like to invite your team to share a poster at the event. I have attached a template, although you would be welcome to use your own. This could be a great opportunity for students to share their work and get some experience with poster presentations, and I am planning on encouraging the students on my VIP team to take the lead on this effort. You would be welcome to have between one and three posters, and we can take care of printing ahead of time to have them ready to share at the event. We would just need the file by no later than 10/25. Please let me know if your students or you might be interested in participating in this showcase. I am also happy to answer any questions that you may have.
+
