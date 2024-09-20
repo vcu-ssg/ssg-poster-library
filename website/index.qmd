@@ -7,19 +7,25 @@ This site is home to a project to create a Quarto poster template for VCU Engine
 
 ## VISION
 
-My vision is a poster template customized for VCU Capstone projects, easily customizable for other VCU-related activities.  This poster template
-would use the VCU Brand Standard fonts and colors, and implement a pleasing and easily modifiable format.
+My vision is a [poster template](./assets/CS%2024-313_Poster.pdf) customized for VCU Capstone projects,
+easily customizable for other VCU-related activities.  This poster template
+would use the VCU Brand Standard fonts and colors, and implement a pleasing
+and easily modifiable format.
 
-A researcher would create a QMD file using a text editor (VS code?), modify the YAML header and add their content to create a picture-perfect, cleanly formatted poster. No formatting or other goofiness, the template would manage the layout.
+The user creates a QMD file using a text editor (VS code?),
+modify the YAML header, then add their content to the QMD. Stylings, layout
+and formatting is left to the template styles.
 
-This template could take one of two forms:
+We've got a starting point - an [example Quarto typst poster](./showcase-2024-10-31/showcase-2024-10-31.pdf).
+
+Modifications to this starting point can take one of two forms:
 
 1. A YAML header for a QMD file that contains all the necessary font, color, icon, background and other settings.  This is the preferred approach.
 
-1. A true quarto extension that contains all the necessary files, etc., ready for use.  This is a more complicated approach, but might be useful if there are lots of options and built-in icons, images and/or logos.
+2. A true quarto extension that contains all the necessary files, etc., ready for use.  This is a more complicated approach, but might be useful if there are lots of options and built-in icons, images and/or logos.
 
-This project may be a simple as reading the documentation and adding the necessary commands to the YAML header.  But, if the extension is not documented
-well, it make take more effort.
+
+This project may be a simple as reading the documentation and adding the necessary commands to the YAML header.  But, if the extension is not documented well, it make take more effort.
 
 ## Samples
 
@@ -42,7 +48,7 @@ These references can help guide development of the template.
 
 * [VCU Brand Standards](https://brand.vcu.edu/) - *Requires VCU login credentials to see all the goodies!*
 
-* [VCU Engineering Research Showcase example](https://egr.vcu.edu/research/research-showcase/) - April 2024 guidelines and instructions
+* [VCU Capstone Guidelines](https://egr.vcu.edu/research/research-showcase/) - April 2024 guidelines and instructions
 
 * [Quarto typst formats](https://quarto.org/docs/output-formats/typst-custom.html) - including the poster format.
 

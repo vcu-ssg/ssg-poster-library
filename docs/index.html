@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.547">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -146,9 +146,10 @@ ul.task-list li input[type="checkbox"] {
 <p>This site is home to a project to create a Quarto poster template for VCU Engineering capstone and other projects.</p>
 <section id="vision" class="level2">
 <h2 class="anchored" data-anchor-id="vision">VISION</h2>
-<p>My vision is a poster template customized for VCU Capstone projects, easily customizable for other VCU-related activities. This poster template would use the VCU Brand Standard fonts and colors, and implement a pleasing and easily modifiable format.</p>
-<p>A researcher would create a QMD file using a text editor (VS code?), modify the YAML header and add their content to create a picture-perfect, cleanly formatted poster. No formatting or other goofiness, the template would manage the layout.</p>
-<p>This template could take one of two forms:</p>
+<p>My vision is a <a href="./assets/CS 24-313_Poster.pdf">poster template</a> customized for VCU Capstone projects, easily customizable for other VCU-related activities. This poster template would use the VCU Brand Standard fonts and colors, and implement a pleasing and easily modifiable format.</p>
+<p>The user creates a QMD file using a text editor (VS code?), modify the YAML header, then add their content to the QMD. Stylings, layout and formatting is left to the template styles.</p>
+<p>We’ve got a starting point - an <a href="./showcase-2024-10-31/showcase-2024-10-31.pdf">example Quarto typst poster</a>.</p>
+<p>Modifications to this starting point can take one of two forms:</p>
 <ol type="1">
 <li><p>A YAML header for a QMD file that contains all the necessary font, color, icon, background and other settings. This is the preferred approach.</p></li>
 <li><p>A true quarto extension that contains all the necessary files, etc., ready for use. This is a more complicated approach, but might be useful if there are lots of options and built-in icons, images and/or logos.</p></li>
@@ -159,13 +160,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="samples">Samples</h2>
 <p>The link below provide an example of what we’re starting with (a template Quarto poster) and our desired product - an easily usable</p>
 <ul>
-<li><a href="../showcase-2024-10-31/showcase-2024-10-31.pdf">Sample Typst Poster</a> - a sample poster created using the quarto typst poster format. It definitely needs work to use VCU colors, fonts, and other features to make RAM-alicious!</li>
+<li><a href="./showcase-2024-10-31/showcase-2024-10-31.pdf">Sample Typst Poster</a> - a sample poster created using the quarto typst poster format. It definitely needs work to use VCU colors, fonts, and other features to make RAM-alicious!</li>
 </ul>
 <p>Below are posters from the 2024 capstone expo. Note the consistent use of headers, footers, colors, logos, and all that other stuff that make these posters look related to each other. These were created using powerpoint and required lots of manual layout.</p>
 <ul>
 <li><p><a href="./assets/CS 24-313_Poster.pdf">CS-24-313</a> - Example poster from Capstone project CS-24-313, Pumphouse Machinery AR Implementation.</p></li>
 <li><p><a href="./assets/CS 24-333_Poster.pdf">CS-24-333</a> - Example poster from Capstone project CS-24-333, Implementation of a STEMM</p></li>
-<li><p><a href="https://egr.vcu.edu/capstone/current-projects/">Other 2024 Showcase Projects</a> - An index of all projects from 2023-24 capstone projects. Each project provides a PDF abstract and a PDF poster.</p></li>
+<li><p><a href="https://egr.vcu.edu/capstone/current-projects/">Other Projects</a> - An index of all projects from 2023-24 capstone projects. Each project provides a PDF abstract and a PDF poster. SCROLL DOWN, the list starts in the middle of the file.</p></li>
 </ul>
 </section>
 <section id="references" class="level2">
@@ -173,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <p>These references can help guide development of the template.</p>
 <ul>
 <li><p><a href="https://brand.vcu.edu/">VCU Brand Standards</a> - <em>Requires VCU login credentials to see all the goodies!</em></p></li>
-<li><p><a href="https://egr.vcu.edu/research/research-showcase/">VCU Engineering Research Showcase example</a> - April 2024 guidelines and instructions</p></li>
+<li><p><a href="https://egr.vcu.edu/research/research-showcase/">VCU Capstone Guidelines</a> - April 2024 guidelines and instructions</p></li>
 <li><p><a href="https://quarto.org/docs/output-formats/typst-custom.html">Quarto typst formats</a> - including the poster format.</p></li>
 <li><p><a href="https://quarto.org/docs/output-formats/typst.html">Quarto typst basics</a></p></li>
 <li><p><a href="https://quarto.org/docs/extensions/">Quarto extensions</a></p></li>
@@ -219,7 +220,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -251,47 +263,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -326,11 +298,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
