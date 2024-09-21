@@ -3,7 +3,9 @@ title: Poster library
 date: last-modified
 ---
 
-This site is home to a project to create a Quarto poster template for VCU Engineering capstone and other projects.
+This site is home to a project to create a Quarto poster template for VCU Engineering capstone and other projects.  
+
+Link to [github repository](https://github.com/vcu-ssg/ssg-poster-library)
 
 <style>
     .bold-center {

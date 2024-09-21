@@ -1,0 +1,95 @@
+---
+title: Untitled
+format:
+  poster-vcu-typst: default
+
+team-members:
+    - name: Abigail Baugher
+      email: ab@vcu.edu
+    - name: Henry Bryant
+      email: author2@vcu.edu
+faculty-advisor:
+    - name: John Leonard
+      email: jdleonard@vcu.edu
+project:
+    - department: Computer Science
+    - id: CS 24-333
+sponsor:
+    - name: Friends of the Pumphouse
+      logo: assets/sponsor-logo.png
+    - advisor:
+        - name: Mac Wood
+        - email: mac.wood@gmail.com
+tools:
+    - image: assets/blender.png
+      name: Blender
+    - image: assets/meta.png
+      name: Meta Quest 3 headsets
+    - image: assets/unity.png
+      name: Unity Engine
+    - image: assets/maya.png
+      name: Maya
+
+column-count: 3
+# <https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
+
+---
+
+(this is a sample QMD file of a poster. Add additional features as the extension is built and tested!)
+
+# Background 
+
+The Byrd Park Pump House was constructed between 1881-1883 to serve as the waterworks
+for the City of Richmond. The downstairs contained a water-powered pumping station,
+while the upstairs featured a large open-air pavilion that hosted lavish events and dances
+until the mid-1920’s. After its closure in 1924, all the machinery within was sold as scrap metal.
+The Friends of Pump House is a non-profit organization that works to preserve, protect, and
+restore the Pump House. The organization tasked VCU with recreating the original
+machinery to understand the scale and importance of the pump house machinery.
+Previous student teams researched the layout of the pumphouse and period-accurate machinery
+to create a detailed 3D pump model and a preliminary AR implementation.
+
+# Achievements
+
+The current student team built off preexisting assets to create an educational
+aid for use by Friends of Pump House. An interactive aid usable for both remote
+and on-site at the Pump House was to help generate interest in the restoration
+of the Pump House, as well as raise awareness of the Pump House’s
+historical significance.
+
+# Project Design
+
+## Features
+
+• Fully engaged/ Immersive: Can move and explore the pumphouse without being at the location
+• Interactable: Interact with the different machinery
+• Audiovisual Experience: Hear what the pumphouse sounded like
+
+## Audience/Use
+
+• Schools: Could be used to teach students about the Pump House
+• Kids: Would be more interested in the new technology.
+• Educational Video Aid
+• Accessible from Home and People with disability
+• Generate Funding: Could be shown to potential donors without them being physically present at the pumphouse
+
+# VR Application
+
+(add sample images)
+
+# Asset Development
+
+From MNE-504 and MULT-603, we have access to in-depth research about the Pump House and 3D
+models of the machinery. Future artists will design and implement models of Generator, Hydroelectric
+Generator, Switchboard, Boiler, Leffel Turbine.
+
+These 3D objects will replace place holders used in our VR application.
+
+# Future Adaptation
+
+Possible enhancements to out current application:
+
+• Working with artists to enhance the quality of our 3D models.
+• Exporting project to IOS or Android tablet for in-hand experience.
+• Altering Unity project for augmented reality deployment on XR headset
+• Extension of Hydroelectric and Boiler room
