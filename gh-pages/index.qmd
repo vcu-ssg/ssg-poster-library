@@ -125,13 +125,14 @@ I envision the initial extension named "poster-vcu". Future extensions could be 
 
 ## How to help
 
-Following this instructions above, I created a new typst extension called "poster-vcu".  The code is stored in this repo at this location:
-
-<https://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/poster-vcu>
-
-It's already for someone to start building. *FORK* this repo and create your own!  Then, if you want to share, issue a *pull request* for me to bring your
+*FORK* this repo and create your own!  Then, if you want to share, issue a *pull request* for me to bring your
 changes back into this repo.
 
+Following this instructions above, I created a new typst extension called "poster-vcu".  The code is stored in this repo at this location:
+
+<https://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/>
+
+It's already for someone to start building!
 
 ## Additional samples
 

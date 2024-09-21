@@ -39,7 +39,7 @@
     "href": "index.html#how-to-help",
     "title": "Poster library",
     "section": "How to help",
-    "text": "How to help\nFollowing this instructions above, I created a new typst extension called “poster-vcu”. The code is stored in this repo at this location:\nhttps://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/poster-vcu\nIt’s already for someone to start building. FORK this repo and create your own! Then, if you want to share, issue a pull request for me to bring your changes back into this repo."
+    "text": "How to help\nFORK this repo and create your own! Then, if you want to share, issue a pull request for me to bring your changes back into this repo.\nFollowing this instructions above, I created a new typst extension called “poster-vcu”. The code is stored in this repo at this location:\nhttps://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/\nIt’s already for someone to start building!"
   },
   {
     "objectID": "index.html#additional-samples",
