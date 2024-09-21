@@ -3,35 +3,127 @@ title: Poster library
 date: last-modified
 ---
 
-This site is home to a project to create a Quarto poster template for VCU Engineering capstone and other projects.  
+This site is home to a project to create a Quarto poster template for VCU Engineering capstone and other projects.
+
+<style>
+    .bold-center {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 4em;
+        text-align: center;
+        color: black;
+    }
+    .pdf-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pdf-container iframe {
+        width: 48%;
+        height: 500px; /* Adjust height as needed */
+    }    
+</style>
+
+::: {.bold-center}
+I need your help!
+:::
 
 ## VISION
 
-My vision is a [poster template](./assets/CS%2024-313_Poster.pdf) customized for VCU Capstone projects,
+My vision is a [Quarto poster template](./assets/CS%2024-313_Poster.pdf) customized for VCU Capstone projects,
 easily customizable for other VCU-related activities.  This poster template
 would use the VCU Brand Standard fonts and colors, and implement a pleasing
-and easily modifiable format.
+and easily modifiable format, printed directly to PDF without the need for google slides, powerpoint, or figma.
 
-The user creates a QMD file using a text editor (VS code?),
-modify the YAML header, then add their content to the QMD. Stylings, layout
+The user creates a QMD file using a text editor (VS code?), modifies the YAML header, then adds their content to the QMD. Stylings, layout
 and formatting is left to the template styles.
 
-We've got a starting point - an [example Quarto typst poster](./showcase-2024-10-31/showcase-2024-10-31.pdf).
+When the QMD is rendered, Quarto would create a PDF of the appropriate size, perfect for printing on large poster paper and mounting on poster board.
+No powerpoint, no google slides, no interim files, no mouse surgery.  Because it's Quarto, formulas, computations, images and all the goodies can
+be embed into the single Quarto QMD file. AND, it would all live cleanly within a github repo.
 
-Modifications to this starting point can take one of two forms:
+## Starting point
 
-1. A YAML header for a QMD file that contains all the necessary font, color, icon, background and other settings.  This is the preferred approach.
+We've got a starting point.  Below is a sample poster created using Quarto and the typst extension:
 
-2. A true quarto extension that contains all the necessary files, etc., ready for use.  This is a more complicated approach, but might be useful if there are lots of options and built-in icons, images and/or logos.
+![](./showcase-2024-10-31/showcase-2024-10-31.pdf){width=500px height=380px fig-align="center"}
 
+Below is an example of a completed VCU poster, prepared manually using powerpoint:
 
-This project may be a simple as reading the documentation and adding the necessary commands to the YAML header.  But, if the extension is not documented well, it make take more effort.
+![](./assets/CS%2024-313_Poster.pdf){width=500px height=380px fig-align="center"}
 
-## Samples
+The student team needed to manually place all the elements and tweak things to make them look good.  Each and every
+student team needs to manually prepare their posters, consuming valuable time that could and should be directed to
+project tasks, rather than mundane poster preparation.
+
+## A proposed YAML header
+
+If we build this template, I envision the YAML header below would be used to create the final pumphouse poster (above). 
+
+Note that YAML header elements align with specific elements on the final poster. The extension/tool would place the contents from the YAML header directly into the appropriate spot on the
+template without the use doing anything.
+
+    ---
+    title: Pumphouse Machinery VR Implementation
+    team-members:
+        - name: Abigail Baugher
+          email: ab@vcu.edu
+        - name: Henry Bryant
+          email: author2@vcu.edu
+    faculty-advisor:
+        - name: John Leonard
+          email: jdleonard@vcu.edu
+    project:
+        - department: Computer Science
+        - id: CS 24-333
+    sponsor:
+        - name: Friends of the Pumphouse
+          logo: assets/sponsor-logo.png
+        - advisor:
+            - name: Mac Wood
+            - email: mac.wood@gmail.com
+    tools:
+        - image: assets/blender.png
+          name: Blender
+        - image: assets/meta.png
+          name: Meta Quest 3 headsets
+        - image: assets/unity.png
+          name: Unity Engine
+        - image: assets/maya.png
+          name: Maya
+
+    column-count: 3
+
+    (other stuff to set header and footer logos, colors, fonts per typst.  If missing, use defaults.)
+    ---
+
+    # Background 
+
+    # Achievements
+
+    # Project Design
+
+    # VR Application
+
+    # Asset Development
+
+    # Future Adaptation
+
+Again, note how the the *Heading1* sections align with those in the final poster.  A user of the template need only
+identify and complete the sections, and the template would lay things out automatically.  In this case, it's filling three columns from top-to-bottom, left-to-right.
+
+## Preferred approach
+
+I believe that the best way to accomplish this project is to create a new *typst* extension format.  Below are instructions for getting started.
+
+* [Instructions are here](https://quarto.org/docs/output-formats/typst-custom.html#create-a-format)
+
+I envision the initial extension named "poster-vcu-capstone". Future extensions could be customized for student projects, faculty research labs, department posters, etc.
+
+## Additional samples
 
 The link below provide an example of what we're starting with (a template Quarto poster) and our desired product - an easily usable 
 
-* [Sample Typst Poster](./showcase-2024-10-31/showcase-2024-10-31.pdf) - a sample poster created using the quarto typst poster format. It definitely needs work
+* [Sample Typst Poster](./showcase-2024-10-31/showcase-2024-10-31.pdf) - a sample poster created using the Quarto typst poster format. It definitely needs work
 to use VCU colors, fonts, and other features to make RAM-alicious!
 
 Below are posters from the 2024 capstone expo.  Note the consistent use of headers, footers, colors, logos, and all that other stuff that make these posters look related to each other.  These were created using powerpoint and required lots of manual layout.  
@@ -50,11 +142,11 @@ These references can help guide development of the template.
 
 * [VCU Capstone Guidelines](https://egr.vcu.edu/research/research-showcase/) - April 2024 guidelines and instructions
 
-* [Quarto typst formats](https://quarto.org/docs/output-formats/typst-custom.html) - including the poster format.
+* [Quarto typst formats](https://Quarto.org/docs/output-formats/typst-custom.html) - including the poster format.
 
-* [Quarto typst basics](https://quarto.org/docs/output-formats/typst.html)
+* [Quarto typst basics](https://Quarto.org/docs/output-formats/typst.html)
 
-* [Quarto extensions](https://quarto.org/docs/extensions/)
+* [Quarto extensions](https://Quarto.org/docs/extensions/)
 
-* [Building extensions](https://quarto.org/docs/extensions/creating.html) - how to build quarto extensions
+* [Building extensions](https://Quarto.org/docs/extensions/creating.html) - how to build Quarto extensions
 
