@@ -26,7 +26,8 @@ Link to [github repository](https://github.com/vcu-ssg/ssg-poster-library)
 </style>
 
 ::: {.bold-center}
-I need your help!
+I need your help!<br/>
+See [how to help](#how-to-help) below.
 :::
 
 ## VISION
@@ -115,11 +116,21 @@ identify and complete the sections, and the template would lay things out automa
 
 ## Preferred approach
 
-I believe that the best way to accomplish this project is to create a new *typst* extension format.  Below are instructions for getting started.
+I believe that the best way to accomplish this project is to create a new *typst* extension format. Below are instructions for getting started.
 
 * [Instructions are here](https://quarto.org/docs/output-formats/typst-custom.html#create-a-format)
 
-I envision the initial extension named "poster-vcu-capstone". Future extensions could be customized for student projects, faculty research labs, department posters, etc.
+I envision the initial extension named "poster-vcu". Future extensions could be customized for student projects, faculty research labs, department posters, etc.
+
+## How to help
+
+Following this instructions above, I created a new typst extension called "poster-vcu".  The code is stored in this repo at this location:
+
+<https://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/poster-vcu>
+
+It's already for someone to start building. *FORK* this repo and create your own!  Then, if you want to share, issue a *pull request* for me to bring your
+changes back into this repo.
+
 
 ## Additional samples
 

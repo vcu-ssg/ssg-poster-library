@@ -32,7 +32,14 @@
     "href": "index.html#preferred-approach",
     "title": "Poster library",
     "section": "Preferred approach",
-    "text": "Preferred approach\nI believe that the best way to accomplish this project is to create a new typst extension format. Below are instructions for getting started.\n\nInstructions are here\n\nI envision the initial extension named “poster-vcu-capstone”. Future extensions could be customized for student projects, faculty research labs, department posters, etc."
+    "text": "Preferred approach\nI believe that the best way to accomplish this project is to create a new typst extension format. Below are instructions for getting started.\n\nInstructions are here\n\nI envision the initial extension named “poster-vcu”. Future extensions could be customized for student projects, faculty research labs, department posters, etc."
+  },
+  {
+    "objectID": "index.html#how-to-help",
+    "href": "index.html#how-to-help",
+    "title": "Poster library",
+    "section": "How to help",
+    "text": "How to help\nFollowing this instructions above, I created a new typst extension called “poster-vcu”. The code is stored in this repo at this location:\nhttps://github.com/vcu-ssg/ssg-poster-library/tree/main/typst-templates/poster-vcu/poster-vcu\nIt’s already for someone to start building. FORK this repo and create your own! Then, if you want to share, issue a pull request for me to bring your changes back into this repo."
   },
   {
     "objectID": "index.html#additional-samples",
