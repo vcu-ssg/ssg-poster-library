@@ -27,8 +27,9 @@ Link to [github repository](https://github.com/vcu-ssg/ssg-poster-library)
 
 ::: {.bold-center}
 I need your help!<br/>
-See [how to help](#how-to-help) below.
 :::
+<center>See [how to help](#how-to-help) below.</center>
+
 
 ## VISION
 
